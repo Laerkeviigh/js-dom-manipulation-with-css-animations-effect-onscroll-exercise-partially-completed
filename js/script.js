@@ -45,6 +45,7 @@ const dogElem = document.getElementById("dogElem");
 if (dogElem) {
   dogElem.addEventListener("click", function () {
     this.classList.toggle("anim-scale");
+      soundDog.play();
   });
 }
 
@@ -53,6 +54,7 @@ const bearElem = document.getElementById("bearElem");
 if (bearElem) {
   bearElem.addEventListener("click", function () {
     this.classList.toggle("anim-rotate");
+      soundBear.play();
   });
 }
 
@@ -61,6 +63,7 @@ const horseElem = document.getElementById("horseElem");
 if (horseElem) {
   horseElem.addEventListener("click", function () {
     this.classList.toggle("anim-skew");
+      soundHorse.play();
   });
 }
 
@@ -146,3 +149,10 @@ soundBear.src = "../sound/bear.mp3";
 --------------------------------------------------- */
 
 // TODO: Tilføj din egen klikfunktion for billedet i sec6 her
+
+const customElem = document.getElementById("customElem");
+if (customElem) {
+  customElem.addEventListener("click", function () {
+    this.classList.toggle("anim-pop");
+  });
+}
